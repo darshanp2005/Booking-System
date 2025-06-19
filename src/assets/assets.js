@@ -16,20 +16,20 @@ export const assets = {
 
 export const dummyTrailers = [
     {
-        image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=WpW36ldAqnM'
-    },
-    {
-        image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=-sAOWhvheK8'
-    },
-    {
         image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
         videoUrl: 'https://www.youtube.com/watch?v=1pHDWnXmK7Y'
     },
     {
         image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
         videoUrl: 'https://www.youtube.com/watch?v=umiKiW4En9g'
+    },
+    {
+        image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=WpW36ldAqnM'
+    },
+    {
+        image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=-sAOWhvheK8'
     },
 ]
 
@@ -54,26 +54,7 @@ const dummyCastsData = [
 ]
 
 export const dummyShowsData = [
-    {
-        "_id": "324544",
-        "id": 324544,
-        "title": "In the Lost Lands",
-        "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
-        "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
-        "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 14, "name": "Fantasy" },
-            { "id": 12, "name": "Adventure" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-02-27",
-        "original_language": "en",
-        "tagline": "She seeks the power to free her people.",
-        "vote_average": 6.4,
-        "vote_count": 15000,
-        "runtime": 102,
-    },
+    
     {
         "_id": "1232546",
         "id": 1232546,
@@ -92,6 +73,44 @@ export const dummyShowsData = [
         "vote_average": 6.405,
         "vote_count": 18000,
         "runtime": 103,
+    },{
+        "_id": "324544",
+        "id": 324544,
+        "title": "In the Lost Lands",
+        "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
+        "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
+        "genres": [
+            { "id": 28, "name": "Action" },
+            { "id": 14, "name": "Fantasy" },
+            { "id": 12, "name": "Adventure" }
+        ],
+        "casts": dummyCastsData,
+        "release_date": "2025-02-27",
+        "original_language": "en",
+        "tagline": "She seeks the power to free her people.",
+        "vote_average": 6.4,
+        "vote_count": 15000,
+        "runtime": 102,
+    },{
+        "_id": "668489",
+        "id": 668489,
+        "title": "Havoc",
+        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+        "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
+        "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
+        "genres": [
+            { "id": 28, "name": "Action" },
+            { "id": 80, "name": "Crime" },
+            { "id": 53, "name": "Thriller" }
+        ],
+        "casts": dummyCastsData,
+        "release_date": "2025-04-25",
+        "original_language": "en",
+        "tagline": "No law. Only disorder.",
+        "vote_average": 6.537,
+        "vote_count": 35960,
+        "runtime": 107,
     },
     {
         "_id": "552524",
@@ -113,26 +132,7 @@ export const dummyShowsData = [
         "vote_count": 27500,
         "runtime": 108,
     },
-    {
-        "_id": "668489",
-        "id": 668489,
-        "title": "Havoc",
-        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
-        "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
-        "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 80, "name": "Crime" },
-            { "id": 53, "name": "Thriller" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-04-25",
-        "original_language": "en",
-        "tagline": "No law. Only disorder.",
-        "vote_average": 6.537,
-        "vote_count": 35960,
-        "runtime": 107,
-    },
+    
     {
         "_id": "950387",
         "id": 950387,

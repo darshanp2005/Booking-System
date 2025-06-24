@@ -1,24 +1,32 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { dummyDateTimeData, dummyShowsData } from '../assets/assets';
 import { Heart, PlayCircleIcon, StarIcon } from 'lucide-react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
+import DateSelect from '../components/DateSelect';
+import MovieCard from '../components/MovieCard';
 
 function MovieDetails() {
+
+  const[loading, setLoading] = useState(true);
+  const navigate = useNavigate();
   const { id } = useParams();
   const [show, setShow] = useState(null);
   const scrollContainerRef = useRef(null);
 
-
   const getShow = async () => {
-    const foundShow = dummyShowsData.find(show => show._id === id);
-    if (foundShow) {
+    
+     //TODO: For incorrect id it shows loading effect on the screen.
+     setLoading(true);
+     const Show = dummyShowsData.find(show => show._id === id);
+     if (Show) {
       setShow({
-        movie: foundShow,
-        dateTime: dummyDateTimeData,
+       movie: Show,
+       dateTime: dummyDateTimeData,
       });
     }
-  };
+  setLoading(false);
+};
 
   // Helper to convert runtime in minutes to "Hh Mm" format
   const timeFormat = (runtime) => {
@@ -99,6 +107,21 @@ function MovieDetails() {
             </motion.div>
             ))}
          </div>
+        </div>
+
+        <DateSelect dateTime={show.dateTime} id={id}/>
+
+        <p className='text-lg font-medium mt-20 mb-8'>You May Also Like</p>
+        <div className="flex justify-center gap-4 overflow-x-auto">
+         {dummyShowsData.slice(0, 4).map((movie, index) => (
+         <MovieCard key={index} movie={movie} />
+          ))}
+        </div>
+
+        <div className='flex justify-center mt-10'>
+          <button onClick={() => {navigate('/movies'); scrollTo(0,0)}} className='px-7 py-2 text-sm bg-red-500 hover:bg-primary-dull
+          transion rounded-md font-medium cursor-pointer'
+          >Show more</button>
         </div>
 
     </div>

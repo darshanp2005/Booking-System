@@ -5,6 +5,7 @@ import { Heart, PlayCircleIcon, StarIcon } from 'lucide-react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import DateSelect from '../components/DateSelect';
 import MovieCard from '../components/MovieCard';
+import Loading from '../components/Loading';
 
 function MovieDetails() {
 
@@ -125,9 +126,8 @@ function MovieDetails() {
         </div>
 
     </div>
-  ) : (
-    <div className="text-center py-10 text-gray-500 text-lg">Loading...</div>
-  );
+  ) : 
+  <Loading/>
 }
 
 export default MovieDetails;

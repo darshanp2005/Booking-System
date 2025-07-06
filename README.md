@@ -1,4 +1,9 @@
 ## Booking - App (Movies) 
 
-Flow Diagram
+> Flow Diagram
 ![alt text](image.png)
+
+
+> Run
+npm i
+npm run dev
